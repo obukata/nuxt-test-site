@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="container mx-auto px-4">
-			<h1>Index</h1>
+			<h1>Page1</h1>
 			<p>page text.page text.page text.page text.page text.page text.page text.page text.page text.</p>
 		</div>
 	</div>
@@ -11,7 +11,7 @@
 export default {
 	head: {
 		bodyAttrs: {
-			id: 'page--index'
+			id: 'page--page1'
 		}
 	}
 }
