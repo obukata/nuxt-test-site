@@ -1,35 +1,38 @@
 <template>
 	<div class="page-wrap">
 		<header class="page-header">
-			<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-				<div class="flex items-center flex-shrink-0 text-white mr-6">
+			<nav class="flex items-center justify-between flex-wrap max-w-5xl m-auto">
+				<div class="flex items-center flex-shrink-0 mr-6">
 					<nuxt-link to="/">
-						<span class="font-semibold text-xl tracking-tight">Nuxt Test Site</span>
+						<span class="text-xl tracking-tight">Nuxt テストサイト</span>
 					</nuxt-link>
 				</div>
-				<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-					<div class="text-sm lg:flex-grow">
-						<nuxt-link to="/page1/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Page1</nuxt-link>
-						<nuxt-link to="/page2/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Page2</nuxt-link>
-						<nuxt-link to="/page3/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Page3</nuxt-link>
-					</div>
+				<div class="text-xs font-bold">
+					<ul class="inline-block">
+						<li class="inline-block ml-4"><nuxt-link to="/page1/" class=" h-full w-full p-6 block">コンテンツ1</nuxt-link></li>
+						<li class="inline-block ml-4"><nuxt-link to="/page2/" class=" h-full w-full p-6 block">コンテンツ2</nuxt-link></li>
+						<li class="inline-block ml-4"><nuxt-link to="/page3/" class=" h-full w-full p-6 block">コンテンツ3</nuxt-link></li>
+					</ul>
+					<div class="inline-block ml-4"><nuxt-link to="/contact/" class="bg-blue-400 h-full w-full p-6 block text-white">お問い合わせ</nuxt-link></div>
 				</div>
 			</nav>
 		</header>
 
-		<div id="luxy" class="page-luxy">
+		<div>
 			<nuxt />
-
-			<footer class="page-footer">
-				<div class="footer-body">
-					<small class="footer-copyright">&copy; Nuxt Test Site</small>
-				</div>
-			</footer>
 		</div>
+
+		<footer class="page-footer">
+			<div class="footer-body">
+				<small class="footer-copyright">&copy; Nuxt Test Site</small>
+			</div>
+		</footer>
 
 	</div>
 </template>
 
 <style>
-
+html {
+	font-family: 'Noto Sans JP', sans-serif;
+}
 </style>
