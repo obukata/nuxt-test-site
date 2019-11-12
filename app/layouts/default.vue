@@ -1,10 +1,10 @@
 <template>
 	<div class="page-wrap">
-		<header class="page-header">
+		<header class="page-header absolute top-0 w-full">
 			<nav class="flex items-center justify-between flex-wrap max-w-5xl m-auto">
 				<div class="flex items-center flex-shrink-0 mr-6">
 					<nuxt-link to="/">
-						<span class="text-xl tracking-tight">Nuxt テストサイト</span>
+						<span class="text-2xl tracking-tight font-bold text-blue-400">なくすと</span>
 					</nuxt-link>
 				</div>
 				<div class="text-xs font-bold">
@@ -34,5 +34,15 @@
 <style>
 html {
 	font-family: 'Noto Sans JP', sans-serif;
+	color: #353E47;
+}
+.page-wrap {
+	padding-top: 66px;
+}
+.lower-mainvisual {
+	height: 24rem;
+}
+.lower-mainvisual-image {
+	height: 24rem;
 }
 </style>
