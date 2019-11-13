@@ -1,8 +1,13 @@
 <template>
 	<div>
-		<div class="container mx-auto px-4">
-			<h1>Page2</h1>
-			<p>page text.page text.page text.page text.page text.page text.page text.page text.page text.</p>
+		<div class="mx-auto">
+			<div class="lower-mainvisual flex justify-center items-center h-screen">
+				<div class="lower-mainvisual-body">
+					<h1 class="mainvisual-title font-bold text-5xl text-white tracking-widest">
+						Animation
+					</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -15,7 +20,13 @@ export default {
 		}
 	}
 }
+
 </script>
 
-<style>
+<style scoped>
+.lower-mainvisual {
+	background: url(/assets/images/page2/img-mainvisual.jpg) no-repeat center center;
+	background-size: cover;
+}
 </style>
+

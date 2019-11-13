@@ -1,28 +1,28 @@
 <template>
 	<div class="page-wrap">
-		<header class="page-header absolute top-0 w-full">
+		<header class="page-header absolute top-0 w-full tracking-widest z-10">
 			<nav class="flex items-center justify-between flex-wrap max-w-5xl m-auto">
 				<div class="flex items-center flex-shrink-0 mr-6">
 					<nuxt-link to="/">
-						<span class="text-2xl tracking-tight font-bold text-blue-400">なくすと</span>
+						<span class="text-2xl font-bold text-white">Front Docs</span>
 					</nuxt-link>
 				</div>
 				<div class="text-xs font-bold">
 					<ul class="inline-block">
-						<li class="inline-block ml-4"><nuxt-link to="/page1/" class=" h-full w-full p-6 block">コンテンツ1</nuxt-link></li>
-						<li class="inline-block ml-4"><nuxt-link to="/page2/" class=" h-full w-full p-6 block">コンテンツ2</nuxt-link></li>
-						<li class="inline-block ml-4"><nuxt-link to="/page3/" class=" h-full w-full p-6 block">コンテンツ3</nuxt-link></li>
+						<li class="inline-block ml-4 text-white"><nuxt-link to="/page1/" class=" h-full w-full p-6 block">Design</nuxt-link></li>
+						<li class="inline-block ml-4 text-white"><nuxt-link to="/page2/" class=" h-full w-full p-6 block">Animation</nuxt-link></li>
+						<li class="inline-block ml-4 text-white"><nuxt-link to="/page3/" class=" h-full w-full p-6 block">Feature</nuxt-link></li>
 					</ul>
-					<div class="inline-block ml-4"><nuxt-link to="/contact/" class="bg-blue-400 h-full w-full p-6 block text-white">お問い合わせ</nuxt-link></div>
+					<div class="inline-block ml-4"><nuxt-link to="/contact/" class="bg-white h-full w-full p-6 block">Adminer</nuxt-link></div>
 				</div>
 			</nav>
 		</header>
 
 		<div>
-			<nuxt />
+			<nuxt class="page" />
 		</div>
 
-		<footer class="page-footer">
+		<footer class="page-footer fixed top-0 right-0 flex items-center h-full">
 			<div class="footer-body">
 				<small class="footer-copyright">&copy; Nuxt Test Site</small>
 			</div>
@@ -35,14 +35,25 @@
 html {
 	font-family: 'Noto Sans JP', sans-serif;
 	color: #353E47;
+	font-weight: 500;
+	-webkit-text-size-adjust: 100%;
+	font-feature-settings: 'palt' 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	word-break: break-all;
 }
 .page-wrap {
-	padding-top: 66px;
+
 }
-.lower-mainvisual {
-	height: 24rem;
+.page-header {
+	line-height: 2.6;
 }
-.lower-mainvisual-image {
-	height: 24rem;
+
+.footer-copyright {
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	-ms-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
 }
 </style>

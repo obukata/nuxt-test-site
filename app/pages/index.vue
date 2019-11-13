@@ -1,11 +1,12 @@
 <template>
 	<div>
-		<div class="container mx-auto px-4">
-			<div class="mainvisual flex justify-center items-center">
-				<h1 class="mainvisual-title font-bold text-5xl text-blue-400">
-					やさしさをつくる。<br>
-					やさしさでささえる。
-				</h1>
+		<div class="mx-auto">
+			<div class="mainvisual flex justify-center items-center h-screen">
+				<div class="mainvisual-body">
+					<h1 class="mainvisual-title font-bold text-5xl text-white tracking-widest">
+						Made Nuxt.js
+					</h1>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -24,6 +25,7 @@ export default {
 
 <style>
 .mainvisual {
-	height: calc(100vh - 66px);
+	background: url(/assets/images/index/img-mainvisual.jpg) no-repeat center center;
+	background-size: cover;
 }
 </style>

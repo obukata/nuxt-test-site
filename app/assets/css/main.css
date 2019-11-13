@@ -1,6 +1,85 @@
-.page-enter-active, .page-leave-active {
-  transition: opacity .5s;
+.page {
+	position: relative;
 }
-.page-enter, .page-leave-to {
-  opacity: 0;
+.page::before {
+	content: "";
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: 0;
+	visibility: hidden;
+	background: #000;
+}
+
+.page-leave-active {
+	transition: opacity 0s 1.4s;
+}
+.page-leave-active::before {
+	-webkit-mask: url(/assets/images/common/nature-sprite.png);
+	mask: url(/assets/images/common/nature-sprite.png);
+/*  -webkit-mask-size: 3000% 100%;
+          mask-size: 3000% 100%;
+  -webkit-animation: mask-play 1.4s steps(29) forwards reverse;
+          animation: mask-play 1.4s steps(29) forwards reverse;*/
+	-webkit-mask-size: 2300% 100%;
+	mask-size: 2300% 100%;
+	-webkit-animation: mask-play 1.4s steps(22) forwards reverse;
+	animation: mask-play 1.4s steps(22) forwards reverse;
+	opacity: 1;
+	visibility: visible;
+}
+.page-enter-active {
+	transition: opacity 0s 1.4s;
+}
+.page-enter-active::before {
+	-webkit-mask: url(/assets/images/common/nature-sprite.png);
+	mask: url(/assets/images/common/nature-sprite.png);
+/*  -webkit-mask-size: 3000% 100%;
+          mask-size: 3000% 100%;
+  -webkit-animation: mask-play 1.4s steps(29) forwards;
+          animation: mask-play 1.4s steps(29) forwards;*/
+
+	-webkit-mask-size: 2300% 100%;
+	mask-size: 2300% 100%;
+	-webkit-animation: mask-play 1.4s steps(22) forwards;
+	animation: mask-play 1.4s steps(22) forwards;
+	opacity: 1;
+	visibility: visible;
+}
+.page-leave {
+}
+.page-leave-to {
+}
+
+.page-enter {
+}
+.page-enter-to {
+}
+
+
+@-webkit-keyframes mask-play {
+	from {
+	-webkit-mask-position: 0% 0;
+	mask-position: 0% 0;
+	}
+	to {
+	-webkit-mask-position: 100% 0;
+	mask-position: 100% 0;
+	}
+}
+
+@keyframes mask-play {
+	from {
+	-webkit-mask-position: 0% 0;
+	mask-position: 0% 0;
+	}
+	to {
+	-webkit-mask-position: 100% 0;
+	mask-position: 100% 0;
+	}
 }

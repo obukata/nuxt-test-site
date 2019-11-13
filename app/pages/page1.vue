@@ -1,16 +1,11 @@
 <template>
 	<div>
-		<div class="container mx-auto px-4">
-			<div class="lower-mainvisual flex justify-center items-center mt-8">
-				<div class="lower-mainvisual-body flex justify-between items-center w-full">
-					<div class="lower-mainvisual-detail w-2/5">
-						<h1 class="lower-mainvisual-title font-bold text-blue-400 text-4xl">「その人らしさ」を大切に</h1>
-						<p class="mt-4 font-bold">
-							その人らしい働き方、その人らしい遊び方。<br>
-							一緒に探しませんか。
-						</p>
-					</div>
-					<div class="lower-mainvisual-image w-3/5 h-full"></div>
+		<div class="mx-auto">
+			<div class="lower-mainvisual flex justify-center items-center h-screen">
+				<div class="lower-mainvisual-body">
+					<h1 class="mainvisual-title font-bold text-5xl text-white tracking-widest">
+						Design
+					</h1>
 				</div>
 			</div>
 		</div>
@@ -28,10 +23,10 @@ export default {
 
 </script>
 
-<style>
-.lower-mainvisual-image {
+<style scoped>
+.lower-mainvisual {
 	background: url(/assets/images/page1/img-mainvisual.jpg) no-repeat center center;
-	background-size: 100% auto;
+	background-size: cover;
 }
 </style>
 
